@@ -1,0 +1,12 @@
+{
+	"name": "React Start app",
+	"description": "A TanStack Start app with server rendering, typed server functions, a todo example, Tailwind CSS, and translations ready for more languages. Deploys to Node, Vercel, Netlify, or Cloudflare.",
+	"image": ".laziness/cover.png",
+	"tags": ["app", "ssr", "react"],
+	"prompts": [
+		"Build a todo app that keeps items on the server",
+		"Add a contact form with validation",
+		"Make a dashboard page with cards"
+	],
+	"locale": "en"
+}
