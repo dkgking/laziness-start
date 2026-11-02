@@ -1,12 +1,13 @@
 {
 	"name": "React Start app",
-	"description": "A TanStack Start app with server rendering, typed server functions, a todo example, Tailwind CSS, and translations ready for more languages. Deploys to Node, Vercel, Netlify, or Cloudflare.",
+	"description": "A server-rendered TanStack Start app for anything with data: typed server functions with zod, Tailwind CSS, and translations ready for more languages. The demo is removed when your app is built. Deploys to Node, Vercel, Netlify, or Cloudflare.",
 	"image": ".laziness/cover.png",
-	"tags": ["app", "ssr", "react"],
+	"tags": ["app", "ssr", "react", "server-functions"],
 	"prompts": [
-		"Build a todo app that keeps items on the server",
-		"Add a contact form with validation",
-		"Make a dashboard page with cards"
+		"A booking app where customers pick a date and time slot",
+		"An expense tracker with categories and monthly totals",
+		"A feedback board where users post ideas and vote on them",
+		"An admin dashboard with stats cards and a searchable table"
 	],
 	"locale": "en"
 }

@@ -34,7 +34,7 @@ The string passed to `createFileRoute` must match the file path. The Vite plugin
 
 ## 2. Data (optional)
 
-Load data in a `loader` through a server function (the `add-server-function` skill). `src/routes/{-$locale}/todos.tsx` is the reference:
+Load data in a `loader` through a server function (the `add-server-function` skill). The todo example (`src/routes/{-$locale}/todos.tsx`, until it is removed) looks like this:
 
 ```tsx
 import { listTodos } from "#/server/todos";

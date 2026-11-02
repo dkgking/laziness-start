@@ -5,7 +5,7 @@ description: Add a server function (createServerFn) that reads or changes data o
 
 # Add a server function
 
-Server functions run only on the server; the client calls them through an RPC the framework makes. `src/server/todos.ts` is the reference.
+Server functions run only on the server; the client calls them through an RPC the framework makes. `src/server/todos.ts` is the reference while the example is still in the repo; the snippets below are complete without it.
 
 ## 1. Write it in `src/server/<feature>.ts`
 

@@ -57,6 +57,6 @@ Nothing to change: import the repository in Vercel (or `vercel deploy`). Vercel 
 
 1. `bun run verify` before deploying.
 2. Secrets live in the platform's environment settings, never in the repository.
-3. In-memory data (the todo example) is lost on every restart and is not shared between instances: use a database before going live.
-4. After deploying, check `/`, `/todos` (add a todo), a missing path → 404, and `/en/todos` → 301 `/todos`.
+3. In-memory data (as in the todo example) is lost on every restart and is not shared between instances: use a database before going live.
+4. After deploying, check `/` and each page (a form saves and the change shows), a missing path → 404, and `/en/<page>` → 301 `/<page>`.
 5. When moving off Nitro, update the Runtime lines of `AGENTS.md` and `README.md` so later work does not follow stale instructions.

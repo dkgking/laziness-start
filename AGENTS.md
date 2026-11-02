@@ -13,6 +13,10 @@ A server-rendered web app:
 
 `src/routes/{-$locale}/todos.tsx` with `src/server/todos.ts` is the example to copy: a loader, a form, and server functions with zod-checked input.
 
+## The example is not the app
+
+The todo page, its nav link, the home page button and the demo home page text only show the patterns. **In the first round that builds the user's app, remove them** with `.claude/skills/remove-example/SKILL.md` (unless the user asked for a todo list), and make `/` the user's own page. Never hand back an app that still has template pages, links or text.
+
 ## Working in Web Studio
 
 - The project is in `/workspace`. Change it in place; never start a second project beside it or start the app over.
@@ -76,6 +80,7 @@ Step-by-step guides in `.claude/skills/` (also at `.agents/skills/`, the same fo
 
 | Task | Guide |
 |---|---|
+| Remove the todo example and demo text (first round) | `.claude/skills/remove-example/SKILL.md` |
 | Add a page / route | `.claude/skills/add-page/SKILL.md` |
 | Read or change data on the server | `.claude/skills/add-server-function/SKILL.md` |
 | Add or remove a language | `.claude/skills/add-locale/SKILL.md` |
