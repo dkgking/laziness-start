@@ -22,19 +22,21 @@ The todo page, its nav link, the home page button and the demo home page text on
 - The project is in `/workspace`. Change it in place; never start a second project beside it or start the app over.
 - Never commit, push, or touch `.git`: Studio commits each round itself.
 - The preview runs `bun run dev -- --host 0.0.0.0 --port $PORT` (`.laziness/preview.json`). Keep `bun run dev` and `bun run build` working.
+- That dev server is already running and reloads by itself as files change. Never start another one (`bun dev`) or the production server (`bun run start`): each holds hundreds of MB beside it.
+- The sandbox's memory is small and shared by everything running in it: you, the preview, and the build. Run one heavy command at a time (install, typecheck, build, verify), never in the background or side by side.
 - English only, unless the user asks for other languages or a multilingual app: then follow `.claude/skills/add-locale/SKILL.md`.
 
 ## Commands
 
 | Task | Command |
 |---|---|
-| Dev server (port 3000) | `bun dev` |
+| Dev server (port 3000; not in Web Studio) | `bun dev` |
 | Type check | `bun run typecheck` |
 | Lint + format check | `bun run check` (`bun run check:fix` to fix) |
 | Extract UI strings into catalogs | `bun run i18n:extract` |
 | Fail if any translation is missing | `bun run i18n:check` |
 | Production build | `bun run build` |
-| Run the production build | `PORT=3000 bun run start` |
+| Run the production build (not in Web Studio) | `PORT=3000 bun run start` |
 
 | Every check above, then the build | `bun run verify` |
 
