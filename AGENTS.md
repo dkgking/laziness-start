@@ -22,7 +22,9 @@ The todo page, its nav link, the home page button and the demo home page text on
 - The project is in `/workspace`. Change it in place; never start a second project beside it or start the app over.
 - Never commit, push, or touch `.git`: Studio commits each round itself.
 - `.laziness/preview.json` says how Studio shows the app: `start` is the preview it opens when you end, and `live` the dev server it runs on `$PORT` while you work (on plans with room for it), which follows your edits as you save them. Keep `bun run dev` and `bun run build` working.
-- Studio starts and stops these servers itself. Never start another dev server (`bun dev`, `vite dev`) or the production server (`bun run start`), and never wait for one: each holds hundreds of MB beside it.
+- Studio starts and stops these servers itself. Never start another dev server (`bun dev`, `vite dev`) or the production server (`bun run start`, `node .output/server/index.mjs`, on any port), and never wait for one: each holds hundreds of MB beside it.
+- Never open a browser (Playwright, Chromium) to look at the app: Studio opens it when you end, takes its screenshots, and tells you what failed on the page.
+- `/workspace/.cache` holds the package managers' caches: never format, lint, search, or delete it.
 - The sandbox's memory is small and shared by everything running in it: you, the preview, and the build. Run one heavy command at a time (install, typecheck, build, verify), never in the background or side by side.
 - English only, unless the user asks for other languages or a multilingual app: then follow `.claude/skills/add-locale/SKILL.md`.
 
