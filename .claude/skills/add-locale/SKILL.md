@@ -7,7 +7,7 @@ description: Add, remove or change a language of this app (e.g. add Vietnamese "
 
 The app ships in English only. Add a language only when the user asks for it.
 
-Locale codes must be **exactly two lowercase letters** (`vi`, `fr`, `ja`). The URL prefix matcher in `@sourceking/tanstack-lingui` only accepts `/[a-z]{2}/`, so `zh-TW` or `pt-BR` will not route. If two variants of one language are needed, that needs a library change first: stop and say so.
+Locale codes must be **exactly two lowercase letters** (`vi`, `fr`, `ja`). The URL prefix matcher in `@dkgking/lingui-start` only accepts `/[a-z]{2}/`, so `zh-TW` or `pt-BR` will not route. If two variants of one language are needed, that needs a library change first: stop and say so.
 
 The default locale (`en`) has no URL prefix and its catalog is the Lingui source. Every other locale is served under its prefix (`/vi`, `/vi/todos`).
 

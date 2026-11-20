@@ -8,7 +8,7 @@ A server-rendered web app:
 
 - **TanStack Start** (React 19, SSR, file-based routing, server functions) with the **React Compiler**
 - **Nitro** builds the server (`.output/`), run with Node
-- **Lingui** for every visible string, through `@sourceking/tanstack-lingui` (language in the URL); **English only** until the user asks for more
+- **Lingui** for every visible string, through `@dkgking/lingui-start` (language in the URL); **English only** until the user asks for more
 - **Tailwind CSS v4**, **zod**, **Biome**, **bun**
 
 `src/routes/{-$locale}/todos.tsx` with `src/server/todos.ts` is the example to copy: a loader, a form, and server functions with zod-checked input.
